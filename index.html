@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Penerjemah Bahasa Isyarat</title>
+    <style>
+        /* Mengatur dasar halaman */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif; /* Font modern yang bagus */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        /* Kelas untuk gambar latar belakang */
+        .background-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* CATATAN UNTUK ANDA:
+              Ganti 'background.jpg' dengan nama file foto Anda.
+              Contoh: url('foto-latar-belakang.png');
+            */
+            background-image: url('background.jpg'); /* <-- GANTI NAMA FILE FOTO DI SINI */
+            background-size: cover; /* Agar gambar menutupi seluruh layar */
+            background-position: center; /* Agar gambar terpusat */
+            filter: blur(2px); /* Memberi efek blur pada background */
+        }
+
+        /* Kotak konten di tengah */
+        .welcome-box {
+            background-color: rgba(255, 255, 255, 0.85); /* Putih semi-transparan */
+            padding: 50px 60px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        /* Judul utama */
+        .title {
+            font-size: 2.5em; /* Ukuran font judul */
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        /* Tombol "Coba Sekarang" */
+        .cta-button {
+            background-color: #007BFF; /* Warna biru */
+            color: white; /* Warna teks putih */
+            padding: 15px 30px;
+            text-decoration: none; /* Menghapus garis bawah pada link */
+            border-radius: 50px; /* Membuat tombol menjadi oval */
+            font-size: 1.1em;
+            font-weight: 500;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* Efek saat kursor di atas tombol */
+        .cta-button:hover {
+            background-color: #0056b3; /* Warna biru lebih gelap */
+            transform: scale(1.05);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background-container"></div>
+
+    <div class="welcome-box">
+        <h1 class="title">Penerjemah<br>Bahasa Isyarat SIBI<br>Real-Time</h1>
+        <a href="penerjemah.html" class="cta-button">Coba Penerjemah Sekarang</a>
+    </div>
+
+</body>
+</html>
